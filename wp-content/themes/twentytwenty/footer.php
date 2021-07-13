@@ -12,50 +12,51 @@
  */
 
 ?>
-			<footer id="site-footer" role="contentinfo" class="header-footer-group">
+	<footer id="site-footer" role="contentinfo" class="header-footer-group">
+			<div class="contact_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="touch_text">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+        <div class="contact_section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
+                            <p class="email-text"><a href="#">Gb road 123 londo<br>Uk</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="images/call-icon.png" style="max-width: 100%;padding-left: 30px;">
+                            <p class="email-text"><a href="#">+7123654897</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
+                            <p class="email-text"><a href="#">demo@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact_section end -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="copyright_text">© 2019 All Rights Reserved. <a href="https://html.design">Free Website Templates</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<div class="section-inner">
-
-					<div class="footer-credits">
-
-						<p class="footer-copyright">&copy;
-							<?php
-							echo date_i18n(
-								/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */
-								_x( 'Y', 'copyright date format', 'twentytwenty' )
-							);
-							?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-						</p><!-- .footer-copyright -->
-
-						<p class="powered-by-wordpress">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentytwenty' ) ); ?>">
-								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
-							</a>
-						</p><!-- .powered-by-wordpress -->
-
-					</div><!-- .footer-credits -->
-
-					<a class="to-the-top" href="#site-header">
-						<span class="to-the-top-long">
-							<?php
-							/* translators: %s: HTML character for up arrow. */
-							printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
-							?>
-						</span><!-- .to-the-top-long -->
-						<span class="to-the-top-short">
-							<?php
-							/* translators: %s: HTML character for up arrow. */
-							printf( __( 'Up %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
-							?>
-						</span><!-- .to-the-top-short -->
-					</a><!-- .to-the-top -->
-
-				</div><!-- .section-inner -->
-
-			</footer><!-- #site-footer -->
-
-		<?php wp_footer(); ?>
+    </footer><!-- #site-footer -->
 
 	</body>
 </html>

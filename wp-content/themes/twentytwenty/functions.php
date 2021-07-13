@@ -366,7 +366,7 @@ function twentytwenty_sidebar_registration() {
 		array_merge(
 			$shared_args,
 			array(
-				'name'        => __( 'Footer #1', 'twentytwenty' ),
+				'name'        => __( 'Sidebar #1', 'twentytwenty' ),
 				'id'          => 'sidebar-1',
 				'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
 			)
@@ -758,3 +758,18 @@ function twentytwenty_get_elements_array() {
 	*/
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+function add_link_atts($atts) {
+  $atts['class'] = "nav-link";
+  return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_link_atts');
