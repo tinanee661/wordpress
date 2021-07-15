@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Cron</title>
+    <title>Portal</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,7 +47,7 @@
 <!-- body -->
 <div class="header_main">
 		<div class="container">
-			<div class="logo"><a href="index.html"><img src="<?= get_template_directory_uri() ?> /assets/images/logo.png"></a></div>
+			<div class="logo"><a href="index.html"><img src="<?= get_template_directory_uri() ?> /assets/images/logo1.png"></a></div>
 		</div>
 	</div>
 	</div>

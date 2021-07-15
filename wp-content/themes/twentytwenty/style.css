@@ -6083,3 +6083,8 @@ a.to-the-top>* {
 .entry-title {
     font-size: 34px;
 }
+
+.logo {
+    width: 20%;
+    margin-left: 30%;
+}
