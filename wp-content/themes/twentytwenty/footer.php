@@ -26,19 +26,19 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="map_icon">
-                            <img src="images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
+                            <img src="<?= get_template_directory_uri() ?> /assets/images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
                             <p class="email-text"><a href="#">Gb road 123 londo<br>Uk</a></p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="map_icon">
-                            <img src="images/call-icon.png" style="max-width: 100%;padding-left: 30px;">
+                            <img src="<?= get_template_directory_uri() ?> /assets/images/call-icon.png" style="max-width: 100%;padding-left: 30px;">
                             <p class="email-text"><a href="#">+7123654897</a></p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="map_icon">
-                            <img src="images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
+                            <img src="<?= get_template_directory_uri() ?> /assets/images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
                             <p class="email-text"><a href="#">demo@gmail.com</a></p>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front Page
+ * Template Name: About Page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -16,70 +16,10 @@ get_header();
     <div class="col-md-9">
         <main id="site-content my-4" role="main">
             <section class="main-post">
+                <div>
                 <?php
-                    $args = array(
-                        'posts_per_page' => 1,
-                        'post_type' => 'post',
-                        'order' => 'DSC',
-                    );
-
-                    $the_query = new WP_Query( $args );
-                    if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+                    echo do_shortcode('[smartslider3 slider="2"]');
                 ?>
-
-                <div class="col-md-12">
-                    <div class="current-post">
-                        <?php
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('large', ['alt' => get_the_title(), 'title' => get_the_title()]);
-                        }?>
-                        
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post-link">
-                            <h4 class="post-title"><?php the_title(); ?></h4>
-                        </a>
-                        <p class="post-desc">
-                            <?= the_excerpt() ?>
-                        </p>
-                    </div>
-                </diV>
-
-                <?php endwhile; else : ?>
-                    <!-- IF NOTHING FOUND CONTENT HERE -->
-                <?php endif; ?>
-            </section>
-
-            <section class="posts">
-                <h3>Lajmet me te fundit</h3>
-                <div class="row">
-                    <?php
-                        $args = array(
-                            'posts_per_page' => 3,
-                            'post_type' => 'post',
-                            'order' => 'DSC',
-                        );
-
-                        $the_query = new WP_Query( $args );
-                        if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-                    ?>
-
-                    <div class="col-md-4">
-                        <div class="latest-posts">
-                            <?php
-                            if ( has_post_thumbnail() ) {
-                                the_post_thumbnail('large', ['alt' => get_the_title(), 'title' => get_the_title()]);
-                            }?>
-                            
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post-link">
-                                <h4 class="post-title"><?php the_title(); ?></h4>
-                            </a>
-                        </div>
-                    </diV>
-
-                    <?php endwhile; else : ?>
-                        <!-- IF NOTHING FOUND CONTENT HERE -->
-                    <?php endif; ?>
-                    <?php wp_reset_query(); ?>
-
                 </div>
             </section>
 
