@@ -28,4 +28,11 @@
 		<?php wp_reset_query(); ?>
 		</ul>
 	</div>
+
+	<?php 
+		if ( function_exists( 'register_sidebar' ) ) { 
+			dynamic_sidebar('sidebar-1'); 
+		}
+	?>
+	
 </section>

@@ -12,6 +12,13 @@
  */
 
 ?>
+    <div class="container">
+        <?php 
+            if ( function_exists( 'register_sidebar' ) ) { 
+                dynamic_sidebar('sidebar-2'); 
+            }
+        ?>
+    </div>
 	<footer id="site-footer" role="contentinfo" class="header-footer-group">
 			<div class="contact_main">
         <div class="container">
