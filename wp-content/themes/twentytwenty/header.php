@@ -47,7 +47,7 @@
 <!-- body -->
 <div class="header_main">
 		<div class="container">
-			<div class="logo"><a href="index.html"><img src="<?= get_template_directory_uri() ?> /assets/images/logo1.png"></a></div>
+			<div class="logo"></div>
 		</div>
 	</div>
 	</div>

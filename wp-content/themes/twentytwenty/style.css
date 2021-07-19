@@ -6088,3 +6088,9 @@ a.to-the-top>* {
     width: 20%;
     margin-left: 30%;
 }
+
+.recentcomments a {
+    font-size: 18px;
+    font-family: roboto;
+    color: #1e647b;
+}
